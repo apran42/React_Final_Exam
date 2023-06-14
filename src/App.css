@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+.App {
+  text-align: center;
+}
+
+#header {
+  text-decoration: none;
+}
+
+#header a {
+  text-decoration: none;
+  color: #000;
+}
+
+div #logo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+div #logo > div{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+#logo_ {
+  width: 9%;
+  height: 10%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.categories {
+  background-color:deepskyblue;
+}
+
+.categories > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.categories ul li {
+  font-size: 2em;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  list-style: none;
+}
+
+.categories ul li a {
+  text-decoration-line: none;
+  color: white;
+
+}
+
+.nav-links {
+  position: absolute;
+  top: 7px;
+  right: 75px;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.nav-links li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form label {
+  width: 60px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-form input {
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.home_banner {
+  display: flex;
+  justify-content: center;
+}
+
+.home_images {
+  width: 1000px;
+  height: 1120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_images > div {
+  display: flex;
+}
+
+.image {
+  height: 540px;
+  margin: 10px;
+  border: solid black 1px;
+}
+
+.horizontal {
+  width: 980px;
+}
+
+.vertical {
+  width: 480px;
+}
+
+.book_list > div > div, .fresh_list > div > div, .clothes_list > div > div,
+.food_list > div > div, .electronics_list > div > div, .lifestyle_list > div > div  {
+  flex-basis: 25%;
+  display: flex;
+  width: 250px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-decoration: none;
+
+}
+
+.book > a, .fresh > a, .clothes > a, .food > a,
+.electronics > a, .lifestyle > a {
+  text-decoration: none;
+}
+
+.book_list, .fresh_list, .clothes_list, .food_list,
+.electronics_list, .lifestyle_list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.book_list > div, .fresh_list > div, .clothes_list > div,
+.food_list > div, .electronics_list > div, .lifestyle_list > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book_img, .fresh_img, .clothes_img, .food_img, .electronics_img, .lifestyle_img {
+  height: 300px;
+  width: 250px;
+}
+
+.book_name, .fresh_name, .clothes_name, .food_name, .electronics_name, .lifestyle_name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  width: 250px;
+  height: 60px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.detail {
+  height: 450px;
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.detail_img {
+  height: 450px;
+  width: 375px;
+}
+
+.desc {
+  margin-left: 30px;
+}
+
+.item_name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.detail_hr {
+  width: 500px;
+}
+
+.item_price {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 25px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 60px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 25px;
+  text-align: center ;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: solid black 2px;
+  border-radius: 10px;
+}
+
+.counter_btn {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  padding: 8px 16px;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.counter_btn:hover {
+  background-color: #ddd;
+}
+.buy_btn, .cart_btn {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.cart_btn {
+  background-color: #2196F3;
+}
+
+.buy_btn:hover, .cart_btn:hover {
+  opacity: 0.8;
+}
+
+.buy_cart {
+  display: flex;
+  justify-content: center;
+}
+
+.item_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.item_action {
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+.item_action button {
+  margin-left: 5px;
+}
+
+.items_in_cart {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+}
+
+.items_in_cart button {
+  margin-left: 15px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item_price_in_cart {
+  width: 100px;
+  text-align: center;
+}
+
+.item_name_in_cart {
+  width: 300px;
+  text-align: center;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+.in_cart_hr {
+  width: 1000px;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.total_price {
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
